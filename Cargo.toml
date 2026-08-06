@@ -1,0 +1,30 @@
+[package]
+name = "magi-launcher"
+version = "1.0.0"
+edition = "2021"
+description = "MAGI Launcher — fast keyboard-only application launcher for Windows"
+license = "GPL-3.0-or-later"
+
+[[bin]]
+name = "magi_launcher"
+path = "src/main.rs"
+
+[dependencies]
+windows-sys = { version = "0.61.2", features = ["Win32_Foundation", "Win32_UI_WindowsAndMessaging", "Win32_UI_Input_KeyboardAndMouse", "Win32_System_Threading", "Win32_System_Diagnostics_ToolHelp", "Win32_UI_Shell", "Win32_Graphics_Gdi", "Win32_Graphics_Dwm", "Win32_Globalization", "Win32_System_LibraryLoader", "Win32_System_Console", "Win32_System_Registry", "Win32_Security", "Win32_Security_Authorization", "Win32_UI_Controls", "Win32_UI_HiDpi", "Win32_System_DataExchange", "Win32_System_Memory", "Win32_System_SystemInformation", "Win32_Storage_FileSystem", "Win32_System_ProcessStatus"] }
+
+# Build-only : compile Icon.ico en ressource Windows embarquée dans l'exe
+# (icône visible dans l'Explorateur/la barre des tâches, pas seulement
+# celle chargée à l'exécution pour le tray). N'existe que pendant la
+# compilation sur la machine du développeur -- jamais lié dans le binaire
+# final, donc sans rapport avec l'objectif zéro-dépendance runtime.
+[build-dependencies]
+winresource = "0.1"
+
+# Binaire petit et propre, sans rien qui ressemble à un dropper pour un
+# antivirus heuristique (pas de bootloader/stub d'auto-extraction).
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true

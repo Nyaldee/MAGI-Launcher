@@ -1,0 +1,363 @@
+{
+  "hotkey": "Ctrl+Space",
+  "apps": [
+    {
+      "name": "This PC",
+      "path": "%windir%\\explorer.exe shell:MyComputerFolder"
+    },
+    {
+      "name": "Empty Recycle Bin",
+      "path": "magi:empty-recycle-bin"
+    },
+    {
+      "name": "Play/Pause",
+      "path": "magi:media-play-pause"
+    },
+    {
+      "name": "Next Track",
+      "path": "magi:media-next"
+    },
+    {
+      "name": "Themes",
+      "path": "magi:theme-picker"
+    },
+    {
+      "name": "Timer",
+      "path": "magi:timer"
+    },
+    {
+      "name": "Notes",
+      "path": "magi:notes"
+    },
+    {
+      "name": "Auto-restart",
+      "path": "magi:auto-restart"
+    },
+    {
+      "name": "MAGI Launcher folder",
+      "path": "magi:open-folder"
+    },
+    {
+      "name": "Reload",
+      "path": "magi:reload"
+    },
+    {
+      "name": "Update",
+      "path": "https://github.com/Nyaldee/MAGI-Launcher"
+    },
+    {
+      "name": "Quit",
+      "path": "%windir%\\system32\\taskkill.exe /f /im \"MAGI Launcher.exe\"",
+      "hidden": true
+    },
+    {
+      "name": "Emoji",
+      "path": "magi:emoji"
+    },
+    {
+      "name": "AppData",
+      "path": "%UserProfile%\\AppData"
+    },
+    {
+      "name": "Bluetooth",
+      "path": "%SystemRoot%\\system32\\bthprops.cpl"
+    },
+    {
+      "name": "Calculator",
+      "path": "%windir%\\system32\\calc.exe"
+    },
+    {
+      "name": "Command Prompt",
+      "path": "%windir%\\system32\\cmd.exe",
+      "cwd": "%HOMEDRIVE%%HOMEPATH%"
+    },
+    {
+      "name": "Computer Management",
+      "path": "%windir%\\system32\\compmgmt.msc /s"
+    },
+    {
+      "name": "Control Panel",
+      "path": "%windir%\\system32\\control.exe"
+    },
+    {
+      "name": "Device Manager",
+      "path": "%windir%\\system32\\devmgmt.msc"
+    },
+    {
+      "name": "Disk Cleanup",
+      "path": "%windir%\\system32\\cleanmgr.exe"
+    },
+    {
+      "name": "Disk Management",
+      "path": "%windir%\\system32\\diskmgmt.msc"
+    },
+    {
+      "name": "Documents",
+      "path": "%UserProfile%\\Documents"
+    },
+    {
+      "name": "Environment Variables",
+      "path": "%windir%\\system32\\rundll32.exe sysdm.cpl,EditEnvironmentVariables"
+    },
+    {
+      "name": "Game Controllers",
+      "path": "%windir%\\system32\\joy.cpl"
+    },
+    {
+      "name": "ipconfig",
+      "path": "%COMSPEC% /k color 40 & ipconfig",
+      "cwd": "%HOMEDRIVE%%HOMEPATH%"
+    },
+    {
+      "name": "Load restore point",
+      "path": "%windir%\\system32\\rstrui.exe"
+    },
+    {
+      "name": "Local Disk (C)",
+      "path": "C:\\"
+    },
+    {
+      "name": "Mouse Properties",
+      "path": "%windir%\\system32\\main.cpl ,2"
+    },
+    {
+      "name": "msconfig",
+      "path": "%windir%\\system32\\msconfig.exe"
+    },
+    {
+      "name": "MSInfo32",
+      "path": "%windir%\\system32\\msinfo32.exe"
+    },
+    {
+      "name": "Music",
+      "path": "%UserProfile%\\Music"
+    },
+    {
+      "name": "Networks Connections",
+      "path": "%windir%\\system32\\ncpa.cpl"
+    },
+    {
+      "name": "NVIDIA コントロール パネル",
+      "path": "%SystemRoot%\\explorer.exe shell:appsFolder\\NVIDIACorp.NVIDIAControlPanel_56jybvy8sckqj!NVIDIACorp.NVIDIAControlPanel"
+    },
+    {
+      "name": "nvidiasmi",
+      "path": "%COMSPEC% /k color 40 & nvidia-smi",
+      "cwd": "%HOMEDRIVE%%HOMEPATH%"
+    },
+    {
+      "name": "Optimize Drives",
+      "path": "%windir%\\system32\\dfrgui.exe"
+    },
+    {
+      "name": "Pictures",
+      "path": "%UserProfile%\\Pictures"
+    },
+    {
+      "name": "Power Options",
+      "path": "%windir%\\system32\\powercfg.cpl"
+    },
+    {
+      "name": "Previous Track",
+      "path": "magi:media-previous"
+    },
+    {
+      "name": "Program Files",
+      "path": "%ProgramFiles%"
+    },
+    {
+      "name": "Program Files (x86)",
+      "path": "%ProgramFiles(x86)%"
+    },
+    {
+      "name": "ProgramData",
+      "path": "%ProgramData%"
+    },
+    {
+      "name": "Programs and Features",
+      "path": "%windir%\\system32\\appwiz.cpl"
+    },
+    {
+      "name": "Registry Editor",
+      "path": "%windir%\\regedit.exe"
+    },
+    {
+      "name": "Reliability Monitor",
+      "path": "%windir%\\system32\\perfmon.exe /rel"
+    },
+    {
+      "name": "Resource Monitor",
+      "path": "%windir%\\system32\\perfmon.exe /res"
+    },
+    {
+      "name": "Restart Explorer",
+      "path": "%windir%\\system32\\cmd.exe /c taskkill.exe /f /im explorer.exe && start explorer.exe"
+    },
+    {
+      "name": "Roaming",
+      "path": "%AppData%"
+    },
+    {
+      "name": "Run",
+      "path": "%windir%\\system32\\rundll32.exe shell32.dll,#61"
+    },
+    {
+      "name": "Safely Remove Hardware",
+      "path": "%windir%\\system32\\rundll32.exe shell32.dll,Control_RunDLL hotplug.dll"
+    },
+    {
+      "name": "Services",
+      "path": "%windir%\\system32\\services.msc"
+    },
+    {
+      "name": "Settings",
+      "path": "ms-settings:"
+    },
+    {
+      "name": "Settings - About",
+      "path": "ms-settings:about"
+    },
+    {
+      "name": "Settings - Colors",
+      "path": "ms-settings:colors"
+    },
+    {
+      "name": "Settings - Delivery Optimization",
+      "path": "ms-settings:delivery-optimization"
+    },
+    {
+      "name": "Settings - Display",
+      "path": "ms-settings:display"
+    },
+    {
+      "name": "Settings - Game Bar",
+      "path": "ms-settings:gaming-gamebar"
+    },
+    {
+      "name": "Settings - Gamemode",
+      "path": "ms-settings:gaming-gamemode"
+    },
+    {
+      "name": "Settings - HAGS",
+      "path": "ms-settings:display-advancedgraphics"
+    },
+    {
+      "name": "Settings - Language Time Region",
+      "path": "ms-settings:regionlanguage"
+    },
+    {
+      "name": "Settings - Mouse",
+      "path": "ms-settings:mousetouchpad"
+    },
+    {
+      "name": "Settings - Network & internet",
+      "path": "ms-settings:network-status"
+    },
+    {
+      "name": "Settings - Storage",
+      "path": "ms-settings:storagesense"
+    },
+    {
+      "name": "Settings - Taskbar settings",
+      "path": "ms-settings:taskbar"
+    },
+    {
+      "name": "Settings - Windows Activation",
+      "path": "ms-settings:activation"
+    },
+    {
+      "name": "Settings - Windows Update",
+      "path": "ms-settings:windowsupdate"
+    },
+    {
+      "name": "Shutdown",
+      "path": "%windir%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -command \"(New-Object -ComObject Shell.Application).ShutdownWindows()\"",
+      "hidden": true
+    },
+    {
+      "name": "Sound",
+      "path": "%windir%\\system32\\mmsys.cpl"
+    },
+    {
+      "name": "Startup Folder",
+      "path": "%UserProfile%\\Start Menu\\Programs\\Startup"
+    },
+    {
+      "name": "Steam - No browser",
+      "path": "D:\\Apps\\Steam\\Steam.exe -silent -noverifyfiles -no-browser +open steam://open/minigameslist"
+    },
+    {
+      "name": "Stop",
+      "path": "magi:media-stop"
+    },
+    {
+      "name": "System",
+      "path": "%windir%\\system32\\control.exe system"
+    },
+    {
+      "name": "System Properties",
+      "path": "%windir%\\system32\\SystemPropertiesHardware.exe"
+    },
+    {
+      "name": "System Restore",
+      "path": "%windir%\\system32\\SystemPropertiesProtection.exe"
+    },
+    {
+      "name": "Task Manager",
+      "path": "%windir%\\system32\\Taskmgr.exe"
+    },
+    {
+      "name": "Task Scheduler",
+      "path": "%windir%\\system32\\taskschd.msc"
+    },
+    {
+      "name": "User",
+      "path": "%UserProfile%"
+    },
+    {
+      "name": "Videos",
+      "path": "%UserProfile%\\Videos"
+    },
+    {
+      "name": "Volume Down",
+      "path": "magi:media-volume-down"
+    },
+    {
+      "name": "Volume Mixer",
+      "path": "%windir%\\system32\\SndVol.exe"
+    },
+    {
+      "name": "Volume Mute",
+      "path": "magi:media-volume-mute"
+    },
+    {
+      "name": "Volume Up",
+      "path": "magi:media-volume-up"
+    },
+    {
+      "name": "Windows",
+      "path": "%SystemRoot%"
+    },
+    {
+      "name": "Windows Defender Firewall with Advanced Security",
+      "path": "%windir%\\system32\\WF.msc"
+    },
+    {
+      "name": "Windows Defender Quick Scan",
+      "path": "\"%ProgramFiles%\\Windows Defender\\MpCmdRun.exe\" -Scan -ScanType 1"
+    },
+    {
+      "name": "Windows PowerShell",
+      "path": "%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "cwd": "%HOMEDRIVE%%HOMEPATH%"
+    },
+    {
+      "name": "Windows Security",
+      "path": "windowsdefender:"
+    },
+    {
+      "name": "Windows Tools",
+      "path": "%windir%\\system32\\control.exe /name Microsoft.AdministrativeTools"
+    }
+  ]
+}
