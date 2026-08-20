@@ -1,0 +1,304 @@
+{
+  "apps": [
+    {
+      "name": "7-Zip",
+      "path": "A:\\Apps\\7-Zip\\7zFM.exe"
+    },
+    {
+      "name": "Adobe Photoshop",
+      "path": "A:\\Apps\\Photoshop\\PhotoshopPortable.exe"
+    },
+    {
+      "name": "Adobe Photoshop CS5 Extended",
+      "path": "A:\\Apps\\Adobe Photoshop CS5 Extended\\PhotoshopCS5Portable.exe"
+    },
+    {
+      "name": "Adobe Premiere Pro",
+      "path": "A:\\Apps\\Adobe Premiere Pro\\AdobePremiereProPortable.exe"
+    },
+    {
+      "name": "Aegisub",
+      "path": "A:\\Apps\\Aegisub\\aegisub.exe"
+    },
+    {
+      "name": "AppData",
+      "path": "%USERPROFILE%\\AppData"
+    },
+    {
+      "name": "Apps",
+      "path": "A:\\Apps"
+    },
+    {
+      "name": "Apps2",
+      "path": "D:\\Apps"
+    },
+    {
+      "name": "Audacity",
+      "path": "A:\\Apps\\Audacity\\Audacity.exe"
+    },
+    {
+      "name": "AutoHotkey",
+      "path": "A:\\Apps\\AutoHotkey"
+    },
+    {
+      "name": "Autoruns",
+      "path": "A:\\Apps\\Autoruns64.exe"
+    },
+    {
+      "name": "Brave",
+      "path": "\"A:\\Apps\\Brave\\brave-portable.exe\" --disk-cache-dir=\"R:\\Browser_cache\" --disk-cache-size=134217728"
+    },
+    {
+      "name": "Colors",
+      "path": "A:\\Apps\\Colors\\Colors.exe"
+    },
+    {
+      "name": "common",
+      "path": "A:\\SteamLibrary\\steamapps\\common"
+    },
+    {
+      "name": "Crow Translate",
+      "path": "A:\\Apps\\Crow Translate\\crow.exe"
+    },
+    {
+      "name": "Dev",
+      "path": "D:\\Documents\\Dev"
+    },
+    {
+      "name": "Dolphin",
+      "path": "A:\\Apps\\Dolphin\\Dolphin.exe"
+    },
+    {
+      "name": "Eden",
+      "path": "A:\\Apps\\Eden\\eden.exe"
+    },
+    {
+      "name": "Everything",
+      "path": "A:\\Apps\\Everything\\Everything.exe"
+    },
+    {
+      "name": "File Blender",
+      "path": "A:\\Apps\\File Blender\\File Blender.exe"
+    },
+    {
+      "name": "FlicFlac",
+      "path": "A:\\Apps\\FlicFlac\\FlicFlac.exe"
+    },
+    {
+      "name": "Fonts",
+      "path": "%WINDIR%\\Fonts"
+    },
+    {
+      "name": "foobar2000",
+      "path": "A:\\Apps\\foobar2000\\foobar2000.exe"
+    },
+    {
+      "name": "Frhed",
+      "path": "A:\\Apps\\Frhed\\Frhed.exe"
+    },
+    {
+      "name": "GIMP",
+      "path": "A:\\Apps\\GIMP\\GIMPPortable.exe"
+    },
+    {
+      "name": "hitomi.la",
+      "path": "D:\\Pictures\\Scans\\hitomi.la"
+    },
+    {
+      "name": "HWMonitor",
+      "path": "A:\\Apps\\CPUID\\HWMonitor_x64.exe"
+    },
+    {
+      "name": "Icaros",
+      "path": "A:\\Apps\\Icaros\\IcarosConfig.exe"
+    },
+    {
+      "name": "KeePassXC",
+      "path": "A:\\Apps\\KeePassXC\\KeePassXC.exe"
+    },
+    {
+      "name": "LibreWolf",
+      "path": "A:\\Apps\\LibreWolf\\LibreWolf-Portable.exe"
+    },
+    {
+      "name": "Local",
+      "path": "%LOCALAPPDATA%"
+    },
+    {
+      "name": "Local Disk (A)",
+      "path": "A:\\"
+    },
+    {
+      "name": "Local Disk (C)",
+      "path": "C:\\"
+    },
+    {
+      "name": "Local Disk (D)",
+      "path": "D:\\"
+    },
+    {
+      "name": "LocalSend",
+      "path": "A:\\Apps\\LocalSend\\localsend_app.exe"
+    },
+    {
+      "name": "LosslessCut",
+      "path": "A:\\Apps\\LosslessCut\\LosslessCut.exe"
+    },
+    {
+      "name": "LosslessScaling",
+      "path": "A:\\SteamLibrary\\steamapps\\common\\Lossless Scaling\\LosslessScaling.exe"
+    },
+    {
+      "name": "Minecraft",
+      "path": "\"A:\\SteamLibrary\\steamapps\\common\\PC Ports\\Minecraft\\Minecraft.exe\" --workDir  .\\"
+    },
+    {
+      "name": "Mixer",
+      "path": "%WINDIR%\\System32\\SndVol.exe"
+    },
+    {
+      "name": "MKVToolNix",
+      "path": "D:\\Apps\\MKVToolNix\\mkvtoolnix-gui.exe"
+    },
+    {
+      "name": "mpv",
+      "path": "A:\\Apps\\mpv\\mpv.exe"
+    },
+    {
+      "name": "MSI utility v3",
+      "path": "A:\\Apps\\MSI utility v3.exe"
+    },
+    {
+      "name": "Music",
+      "path": "D:\\Music"
+    },
+    {
+      "name": "musikcube",
+      "path": "A:\\Apps\\musikcube\\musikcube.exe"
+    },
+    {
+      "name": "Open Broadcaster Software",
+      "path": "A:\\Apps\\Open Broadcaster Software\\bin\\64bit\\obs64.exe"
+    },
+    {
+      "name": "Parsec",
+      "path": "A:\\Apps\\Parsec\\parsecd.exe"
+    },
+    {
+      "name": "PCSX2",
+      "path": "A:\\Apps\\PCSX2\\pcsx2-qt.exe"
+    },
+    {
+      "name": "Pictures",
+      "path": "D:\\Pictures"
+    },
+    {
+      "name": "qBittorrent",
+      "path": "\"A:\\Apps\\qBittorrent\\qbittorrent.exe\" -platform windows:darkmode=2"
+    },
+    {
+      "name": "RamDisk (R)",
+      "path": "R:\\"
+    },
+    {
+      "name": "Recycle Bin Folder",
+      "path": "explorer.exe shell:::{645FF040-5081-101B-9F08-00AA002F954E}"
+    },
+    {
+      "name": "Roaming",
+      "path": "%APPDATA%"
+    },
+    {
+      "name": "Saves",
+      "path": "D:\\Documents\\Saves"
+    },
+    {
+      "name": "Screenshots",
+      "path": "D:\\Pictures\\Screenshots"
+    },
+    {
+      "name": "Session",
+      "path": "A:\\Apps\\Session\\Session.exe"
+    },
+    {
+      "name": "ShaderGlass",
+      "path": "A:\\Apps\\ShaderGlass\\ShaderGlass.exe"
+    },
+    {
+      "name": "ShaderGlassKill",
+      "path": "\"A:\\Apps\\SilentCMD.exe\" taskkill /f /im ShaderGlass.exe"
+    },
+    {
+      "name": "ShaderGlassSave",
+      "path": "\"A:\\Apps\\ShaderGlass\\ShaderGlass.exe\" -f A:\\Apps\\ShaderGlass\\ShaderGlass.sgp"
+    },
+    {
+      "name": "ShareX",
+      "path": "A:\\Apps\\ShareX\\ShareX.exe"
+    },
+    {
+      "name": "Shotcut",
+      "path": "A:\\Apps\\Shotcut\\shotcut.exe"
+    },
+    {
+      "name": "Steam",
+      "path": "\"D:\\Apps\\Steam\\Steam.exe\" -silent -noverifyfiles"
+    },
+    {
+      "name": "Steam - Friends",
+      "path": "\"D:\\Apps\\Steam\\Steam.exe\" steam://open/friends/"
+    },
+    {
+      "name": "Steam - No browser",
+      "path": "\"D:\\Apps\\Steam\\Steam.exe\" -silent -noverifyfiles -no-browser +open steam://open/minigameslist"
+    },
+    {
+      "name": "Sublime Text",
+      "path": "A:\\Apps\\Sublime Text\\sublime_text.exe"
+    },
+    {
+      "name": "Thunderbird",
+      "path": "D:\\Apps\\Stormhen\\stormhen-portable.exe"
+    },
+    {
+      "name": "Torrents",
+      "path": "D:\\Torrents"
+    },
+    {
+      "name": "wp",
+      "path": "\"A:\\Apps\\SilentCMD.exe\" A:\\Apps\\weebp\\wp.bat"
+    },
+    {
+      "name": "wpadd",
+      "path": "\"A:\\Apps\\weebp\\wp.exe\" add"
+    },
+    {
+      "name": "wpadd (fullscreen)",
+      "path": "\"A:\\Apps\\weebp\\wp.exe\" add -f"
+    },
+    {
+      "name": "wpkill",
+      "path": "\"A:\\Apps\\SilentCMD.exe\" taskkill /f /im mpv.exe"
+    },
+    {
+      "name": "wpnext",
+      "path": "\"A:\\Apps\\weebp\\wp-headless.exe\" mpv playlist-next"
+    },
+    {
+      "name": "wpopening",
+      "path": "\"A:\\Apps\\SilentCMD.exe\" A:\\Apps\\weebp\\wpopening.bat"
+    },
+    {
+      "name": "wpopening (sound)",
+      "path": "\"A:\\Apps\\SilentCMD.exe\" A:\\Apps\\weebp\\wpopeningsound.bat"
+    },
+    {
+      "name": "YACReader",
+      "path": "A:\\Apps\\YACReader\\YACReader.exe"
+    },
+    {
+      "name": "ZoomIt",
+      "path": "A:\\Apps\\ZoomIt64.exe"
+    }
+  ]
+}

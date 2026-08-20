@@ -1,0 +1,46 @@
+[package]
+name = "magi-launcher"
+version = "1.0.0"
+edition = "2021"
+description = "MAGI Launcher — fast keyboard-only application launcher for Windows"
+license = "GPL-3.0-or-later"
+
+[[bin]]
+name = "magi_launcher"
+path = "src/main.rs"
+
+[dependencies]
+# Win32_System_Console retirée -- aucun appel dans le code (GUI pure,
+# "windows_subsystem = windows" dans main.rs, jamais de console), vérifié
+# avant de l'enlever plutôt que supposé. Win32_System_Registry, elle, DOIT
+# rester malgré son nom trompeur et l'absence de tout Reg*/HKEY dans ce
+# code : cette version de windows-sys range ShellExecuteExW/SHELLEXECUTEINFOW
+# (utilisés par shell32, sans rapport avec le Registre) derrière cette
+# feature précise pour une raison qui lui est propre -- confirmé en
+# retirant la feature : le build échoue sur ShellExecuteExW, jamais sur du
+# Registre.
+# Win32_System_Ioctl/Win32_System_IO : IOCTL_STORAGE_*/FSCTL_*/DeviceIoControl,
+# pour core::disk_ejector -- éjection USB par accès direct au volume (voir
+# son commentaire d'en-tête).
+# Win32_System_Com : uniquement pour CoTaskMemFree (win32::combase), qui
+# libère le buffer renvoyé par SHGetKnownFolderPath (voir
+# core::launch::known_folder) -- pas de CoInitialize, cette API-là ne
+# l'exige pas.
+windows-sys = { version = "0.61.2", features = ["Win32_Foundation", "Win32_UI_WindowsAndMessaging", "Win32_UI_Input_KeyboardAndMouse", "Win32_System_Threading", "Win32_System_Diagnostics_ToolHelp", "Win32_UI_Shell", "Win32_Graphics_Gdi", "Win32_Graphics_Dwm", "Win32_Globalization", "Win32_System_LibraryLoader", "Win32_System_Registry", "Win32_Security", "Win32_Security_Authorization", "Win32_UI_Controls", "Win32_UI_HiDpi", "Win32_System_DataExchange", "Win32_System_Memory", "Win32_System_SystemInformation", "Win32_Storage_FileSystem", "Win32_System_ProcessStatus", "Win32_System_Ioctl", "Win32_System_IO", "Win32_System_Com"] }
+
+# Build-only : compile Icon.ico en ressource Windows embarquée dans l'exe
+# (icône visible dans l'Explorateur/la barre des tâches, pas seulement
+# celle chargée à l'exécution pour le tray). N'existe que pendant la
+# compilation sur la machine du développeur -- jamais lié dans le binaire
+# final, donc sans rapport avec l'objectif zéro-dépendance runtime.
+[build-dependencies]
+winresource = "0.1"
+
+# Binaire petit et propre, sans rien qui ressemble à un dropper pour un
+# antivirus heuristique (pas de bootloader/stub d'auto-extraction).
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
