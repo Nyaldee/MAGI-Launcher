@@ -1,0 +1,18 @@
+# Lie le runtime C statiquement pour que l'exe compilé n'ait aucune
+# dépendance à la présence du redistribuable Visual C++ sur la machine
+# cible -- cohérent avec l'objectif "zéro dépendance" jusqu'au binaire
+# final, pas seulement au niveau des crates.
+#
+# Le manifeste embarqué (comctl32 v6, ex-dépendance d'EM_SETCUEBANNER) a
+# été retiré : le placeholder de la barre de recherche est maintenant
+# dessiné à la main (voir draw_placeholder dans ui/window.rs), plus besoin
+# de comctl32 v6 du tout. Ces rustflags s'appliquant à TOUT binaire compilé
+# pour cette cible -- y compris les scripts de build des dépendances
+# (quote, serde, thiserror...) -- un /MANIFESTINPUT pointant vers un
+# fichier qui n'existe que dans NOTRE dossier faisait échouer leur lien dès
+# qu'une dépendance avec script de build apparaissait (tray-icon).
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]
+
+[target.aarch64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]
