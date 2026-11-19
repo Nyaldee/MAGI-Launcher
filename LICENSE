@@ -1,0 +1,71 @@
+Nyaruhodo Freeware License
+
+Copyright (C) 2026 Nyaldee. All rights reserved.
+
+This license covers the applications published in the releases of this
+repository — CASPER Shot, MAGI Launcher, Silent CMD, Solar RIP and Truncate
+(the "Software") — and the documentation in this repository.
+
+1. Permitted use
+
+   You may download, install and use the Software free of charge, for
+   personal, non-commercial purposes.
+
+2. Restrictions
+
+   You may not:
+
+   a. use the Software for commercial purposes, including within a business,
+      to provide paid services, or as part of a product or service that is
+      sold;
+   b. redistribute, publish, sell, rent, lend or sublicense the Software, in
+      whole or in part, modified or not. The Software is distributed only by
+      its author, through the releases of this repository and
+      https://www.nyaruhodo.com/. Linking to either is welcome;
+   c. modify, adapt or translate the Software, or create derivative works
+      based on it;
+   d. decompile, disassemble or otherwise reverse engineer the Software,
+      except to the extent that applicable law expressly permits it despite
+      this restriction.
+
+3. Third-party components
+
+   The Software includes third-party components, which remain under their own
+   licenses. This license does not restrict the rights those licenses grant
+   for those components.
+
+   - Slint (https://slint.dev), in MAGI Launcher and Solar RIP, under the Slint
+     Royalty-free Desktop, Mobile, and Web Applications License 2.0.
+   - libwebp (https://chromium.googlesource.com/webm/libwebp), shipped with
+     CASPER Shot as libwebp.dll and libsharpyuv.dll, under the BSD 3-Clause
+     License. Copyright (c) 2010, Google Inc. All rights reserved.
+   - The Unicode emoji data file emoji-test.txt, shipped with MAGI Launcher,
+     under the Unicode terms of use (https://www.unicode.org/terms_of_use.html).
+     © 2025 Unicode®, Inc.
+   - Rust libraries (crates), under the MIT License and/or the Apache License
+     2.0.
+
+4. Ownership
+
+   The Software is licensed, not sold. The author keeps all rights not
+   expressly granted by this license.
+
+5. No warranty
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. Some features
+   terminate processes, delete files, rewrite files in place or force-eject
+   drives: you use them at your own risk.
+
+6. Limitation of liability
+
+   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, INCLUDING LOSS OF DATA, WHETHER IN AN ACTION OF CONTRACT, TORT
+   OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+   THE USE OF OR OTHER DEALINGS IN THE SOFTWARE.
+
+7. Termination
+
+   This license ends automatically if you break any of its terms. You must
+   then stop using the Software and delete every copy of it.
